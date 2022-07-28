@@ -87,7 +87,7 @@ void Repeat ()
              
               if(i==OrdersHistoryTotal()-1)
               {
-               // LastProfit = OrderProfit()+OrderSwap()+OrderCommission();
+               LastProfit = OrderProfit()+OrderSwap()+OrderCommission();
                
                if (OrderType()==OP_BUY) LastOrderType = "BUY-Order";
                if (OrderType()==OP_SELL) LastOrderType = "SELL-Order";
@@ -95,7 +95,7 @@ void Repeat ()
                
               }
               // store details in result
-              // myResult = LastOrderType + "Profit:" + LastProfit;
+               myResult = LastOrderType + "Profit:" + LastProfit;
               
              }
 
@@ -170,7 +170,7 @@ for (int j=OrdersHistoryTotal()-1; j >=0; j--)
              
               if(i==OrdersHistoryTotal()-1)
               {
-               // LastProfit = OrderProfit()+OrderSwap()+OrderCommission();
+                LastProfit = OrderProfit()+OrderSwap()+OrderCommission();
                
                if (OrderType()==OP_BUY) LastOrderType = "BUY-Order";
                if (OrderType()==OP_SELL) LastOrderType = "SELL-Order";
@@ -178,7 +178,7 @@ for (int j=OrdersHistoryTotal()-1; j >=0; j--)
                
               }
               // store details in result
-              // myResult = LastOrderType + "Profit:" + LastProfit;
+               myResult = LastOrderType + "Profit:" + LastProfit;
               
              }
 
